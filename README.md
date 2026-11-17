@@ -4,110 +4,34 @@
 [![Three.js](https://img.shields.io/badge/Three.js-r152-000000?style=for-the-badge&logo=three.js&logoColor=white)](https://threejs.org/)
 [![Framer Motion](https://img.shields.io/badge/Framer_Motion-11.0.2-0055FF?style=for-the-badge&logo=framer&logoColor=white)](https://www.framer.com/motion/)
 
-**Portfolio:** [https://heitech.dk](https://heitech.dk) · **GitHub:** [will2022](https://github.com/will2022) · **LinkedIn:** [hein-william](https://www.linkedin.com/in/hein-william)
+Founder and lead developer at Heitech, Aalborg. This is the personal site: shipped products, the stack behind them, and a way to get in touch.
 
-Personal site for William Hein, founder and lead developer at Heitech in Aalborg. React, Three.js, and Framer Motion.
+**Heitech:** [heitech.dk](https://heitech.dk) · **GitHub:** [will2022](https://github.com/will2022) · **LinkedIn:** [hein-william](https://www.linkedin.com/in/hein-william) · **Toptal:** [william-hein](https://www.toptal.com/developers/resume/william-hein#WaovPQ)
 
----
+Aalborg, Denmark · +45 22 55 75 16 · william.prime.talent@gmail.com
 
-## ✨ Features
-
-- 🎨 Interactive 3D avatar with smooth animations
-- 📱 Fully responsive on all devices
-- 🎯 Glass-morphism UI with dark theme
-- 📧 Functional contact form with EmailJS integration
-- 🖼️ Dynamic project showcase with filtering
-- 📊 Visual skill representation
-- 🚀 Smooth scroll and page transitions
-- 🎭 Customizable without touching code
+![William Hein portfolio](docs/hero.jpg)
 
 ---
 
-## 📁 Project Structure
-
-```
-Portfolio-React/
-└── frontend/
-    ├── public/
-    │   ├── index.html
-    │   └── favicon.ico
-    ├── src/
-    │   ├── assets/
-    │   │   ├── CV/              ← Your CV goes here
-    │   │   │   └── uzair_cv.pdf
-    │   │   └── images/          ← Project images go here
-    │   │       ├── Api.png
-    │   │       ├── Auth.png
-    │   │       ├── block.jpg
-    │   │       ├── ecom.jpg
-    │   │       └── portfolio.png
-    │   ├── components/          ← Don't touch these
-    │   │   ├── Navbar.jsx
-    │   │   ├── Hero.jsx
-    │   │   ├── About.jsx
-    │   │   ├── Skills.jsx
-    │   │   ├── Projects.jsx
-    │   │   ├── Contact.jsx
-    │   │   └── Footer.jsx
-    │   ├── data/
-    │   │   └── PortfolioContent.js  ← 🔥 ONLY EDIT THIS
-    │   ├── styles/              ← CSS files (optional)
-    │   ├── App.js
-    │   └── index.js
-    ├── .env                     ← EmailJS keys (optional)
-    ├── .gitignore
-    ├── package.json
-    └── README.md
-```
-
----
-
-## 🚀 Quick Setup
+## Run it
 
 ```bash
-git clone https://github.com/npm-335i/Portfolio-React.git
-cd Portfolio-React/frontend
+git clone https://github.com/prime-consult/my-porftolio.git
+cd my-porftolio
 npm install
 npm start
 ```
 
-## ✏️ Customize in 3 Steps
+The app opens at [http://localhost:3000](http://localhost:3000).
 
-### Step 1: Edit Content
-**Only file to edit:** `/frontend/src/data/PortfolioContent.js`
-
-Change everything:
-- **Hero:** name, title, bio, stats, tech stack
-- **About:** description, skills, stats
-- **Projects:** add/remove projects, images, links
-- **Contact:** email, social links, availability
-- **Skills:** add/remove skills with levels
-
-### Step 2: Add Your CV
-```bash
-# Place your CV in:
-/frontend/src/assets/CV/your_cv.pdf
-
-# Update import in /frontend/src/components/Hero.jsx:
-import cvPDF from "../assets/CV/your_cv.pdf";
-```
-
-### Step 3: Add Project Images
-```bash
-# Place images in:
-/frontend/src/assets/images/your-image.png
-
-# Import in PortfolioContent.js:
-import Project1 from "../assets/images/your-image.png";
-```
+Copy, projects, skills, services, and contact links live in `src/data/PortfolioContent.js`. Live-site thumbnails are in `src/assets/images/projects/`.
 
 ---
 
-## 📧 Contact Form Setup (Optional)
+## Contact form
 
-1. Sign up at [EmailJS](https://www.emailjs.com/)
-2. Create a service and template
-3. Create `.env` file in `/frontend/`:
+The form sends through [EmailJS](https://www.emailjs.com/). Add a `.env` in the project root:
 
 ```env
 REACT_APP_EMAILJS_SERVICE_ID=your_service_id
@@ -115,46 +39,31 @@ REACT_APP_EMAILJS_TEMPLATE_ID=your_template_id
 REACT_APP_EMAILJS_PUBLIC_KEY=your_public_key
 ```
 
----
-
-## 🚀 Deploy to Vercel
-
-1. Push to GitHub
-2. Import repository to [Vercel](https://vercel.com)
-3. Add environment variables (if using EmailJS)
-4. Deploy!
+Email and phone on the page work without those keys.
 
 ---
 
-## 🛠️ Tech Stack
+## Deploy
 
-- **React 19** - UI Framework
-- **Three.js + React Three Fiber** - 3D Graphics
-- **Framer Motion** - Animations
-- **EmailJS** - Contact Form
-- **CSS3** - Styling
+Push the repo, import it on [Vercel](https://vercel.com), and add the EmailJS variables if the form should send.
 
 ---
 
-## 📝 License
+## Stack
 
-MIT License - Feel free to use for personal or commercial projects.
+- React 19
+- Three.js and React Three Fiber
+- Framer Motion
+- EmailJS
 
 ---
 
-## 👨‍💻 William Hein
+## William Hein
 
 Founder and lead developer, Heitech. Aalborg, Denmark.
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/will2022)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hein-william)
-
----
-
-## ⭐ Support
-
-If you found this useful, please give it a ⭐ on GitHub!
-
----
+[![Toptal](https://img.shields.io/badge/Toptal-3863A0?style=for-the-badge&logo=toptal&logoColor=white)](https://www.toptal.com/developers/resume/william-hein#WaovPQ)
 
 **Heitech.dk · Aalborg**
